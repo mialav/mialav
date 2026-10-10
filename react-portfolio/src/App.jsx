@@ -1,30 +1,40 @@
-import './App.css'
+import "./App.css";
 
 const stats = [
-  { label: 'Years experience', value: '5+' },
-  { label: 'Projects shipped', value: '18' },
-  { label: 'Clients helped', value: '12' },
-]
+  { label: "Years experience", value: "5+" },
+  { label: "Projects shipped", value: "18" },
+  { label: "Clients helped", value: "12" },
+];
 
-const skills = ['React', 'TypeScript', 'Node.js', 'UI Design', 'Accessibility', 'API Integration']
+const skills = [
+  "React",
+  "TypeScript",
+  "Node.js",
+  "UI Design",
+  "Accessibility",
+  "API Integration",
+];
 
 const projects = [
   {
-    title: 'Northstar Studio',
-    summary: 'A marketing site for a creative agency with custom animations and a conversion-focused landing experience.',
-    tags: ['React', 'Design System', 'SEO'],
+    title: "Northstar Studio",
+    summary:
+      "A marketing site for a creative agency with custom animations and a conversion-focused landing experience.",
+    tags: ["React", "Design System", "SEO"],
   },
   {
-    title: 'Yonder App',
-    summary: 'A dashboard for managing recurring tasks and reporting metrics to a distributed team.',
-    tags: ['Dashboard', 'UX', 'Analytics'],
+    title: "Yonder App",
+    summary:
+      "A dashboard for managing recurring tasks and reporting metrics to a distributed team.",
+    tags: ["Dashboard", "UX", "Analytics"],
   },
   {
-    title: 'Field Notes',
-    summary: 'A mobile-first journal app that makes it easy to capture ideas, checklists, and personal progress.',
-    tags: ['Product Design', 'Prototyping', 'Testing'],
+    title: "Field Notes",
+    summary:
+      "A mobile-first journal app that makes it easy to capture ideas, checklists, and personal progress.",
+    tags: ["Product Design", "Prototyping", "Testing"],
   },
-]
+];
 
 function App() {
   return (
@@ -44,13 +54,17 @@ function App() {
             <p className="eyebrow">Product designer & frontend developer</p>
             <h1>Hi, I’m Alex — I build thoughtful digital experiences.</h1>
             <p className="lead">
-              I help founders and teams turn rough ideas into polished interfaces that feel clear,
-              fast, and human.
+              I help founders and teams turn rough ideas into polished
+              interfaces that feel clear, fast, and human.
             </p>
 
             <div className="cta-row">
-              <a className="primary-btn" href="#work">View work</a>
-              <a className="secondary-btn" href="#contact">Let’s talk</a>
+              <a className="primary-btn" href="#work">
+                View work
+              </a>
+              <a className="secondary-btn" href="#contact">
+                Let’s talk
+              </a>
             </div>
 
             <ul className="mini-stats" aria-label="Highlights">
@@ -67,7 +81,10 @@ function App() {
             <div className="badge">Available for select work</div>
             <div className="avatar">A</div>
             <h2>Based in Seattle</h2>
-            <p>Designing and building small, impactful web products for people who care about details.</p>
+            <p>
+              Designing and building small, impactful web products for people
+              who care about details.
+            </p>
             <ul>
               <li>UI systems</li>
               <li>Landing pages</li>
@@ -84,9 +101,10 @@ function App() {
 
           <div className="about-grid">
             <p>
-              I’ve spent the last few years designing and coding sites and interfaces for startups,
-              agencies, and personal brands. My approach blends strong visual thinking with clean,
-              component-based engineering so ideas feel both expressive and reliable.
+              I’ve spent the last few years designing and coding sites and
+              interfaces for startups, agencies, and personal brands. My
+              approach blends strong visual thinking with clean, component-based
+              engineering so ideas feel both expressive and reliable.
             </p>
             <div className="skill-list">
               {skills.map((skill) => (
@@ -121,11 +139,13 @@ function App() {
         <section className="section contact" id="contact">
           <p className="eyebrow">Let’s build something</p>
           <h2>Need a sharp portfolio, landing page, or product frontend?</h2>
-          <a className="primary-btn" href="mailto:hello@example.com">hello@example.com</a>
+          <a className="primary-btn" href="mailto:hello@example.com">
+            hello@example.com
+          </a>
         </section>
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

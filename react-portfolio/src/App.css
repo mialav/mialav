@@ -75,7 +75,9 @@
   border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .primary-btn {
@@ -170,7 +172,7 @@
 }
 
 .hero-card li::before {
-  content: '•';
+  content: "•";
   color: #8b5cf6;
   margin-right: 8px;
 }
@@ -235,7 +237,11 @@
 .project-visual {
   height: 160px;
   border-radius: 14px;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.55), rgba(59, 130, 246, 0.35));
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.55),
+    rgba(59, 130, 246, 0.35)
+  );
   margin-bottom: 18px;
 }
 
